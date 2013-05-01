@@ -1,0 +1,4 @@
+These code solves problems in Google codejam 2013 Qualification Round.
+The problem A and B are solved in Python. The problem C with the small data
+is solved in Python and the first large data is solved in C++.
+I added the statement of each problem at the beginning of the source code.

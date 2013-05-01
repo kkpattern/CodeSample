@@ -1,0 +1,19 @@
+microspider is a library for crawling data on Sina Weibo(Chinese biggest
+twitter-like website).
+
+Weibo provides RESTful API for applications to fetch data. To make a request
+one needs a valid access token. Also every access token has a limited number
+of requests it can make per hour.
+
+This library is organized as follows:
+- microspider.api: This module implements the http request to Weibo API.
+- microspider.robot: This module manages the robots. A robot is an user account
+    with an access token for making API requests. Managing the robots means you
+    can save a access token through a RobotManager and get the access token
+    later for API request without worrying exceed the limit.
+- microspider.fetcher: This module contains helper functors for users to fetch
+    data from Weibo without using microspider.robot and microspider.api
+    themselves.
+- microspider.urllibx: This module provides extensions for urllib and urllib2.
+    For now the only "important" class in this module is URLOpener. It provides
+    an easy way to do http get/post request.
